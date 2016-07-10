@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Lesson9.Memento.controller.MainController">
+   <children>
+      <Label layoutX="212.0" layoutY="23.0" prefHeight="53.0" prefWidth="196.0" text="User Profile" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="100.0" prefHeight="38.0" prefWidth="102.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLoad" layoutX="158.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnLoadClick" prefHeight="25.0" prefWidth="122.0" text="Load">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUndo" layoutX="317.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnUndoClick" prefHeight="25.0" prefWidth="122.0" text="Undo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="475.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnSaveClick" prefHeight="25.0" prefWidth="122.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtFirstName" layoutX="158.0" layoutY="103.0" onKeyReleased="#txtTextChanged" prefHeight="31.0" prefWidth="439.0" />
+      <TextField fx:id="txtAddress" layoutX="158.0" layoutY="169.0" onKeyReleased="#txtTextChanged" prefHeight="31.0" prefWidth="439.0" />
+      <TextField fx:id="txtPhoneNum" layoutX="158.0" layoutY="232.0" onKeyReleased="#txtTextChanged" prefHeight="31.0" prefWidth="439.0" />
+      <Label layoutX="33.0" layoutY="166.0" prefHeight="38.0" prefWidth="102.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="232.0" prefHeight="38.0" prefWidth="102.0" text="Phone #">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
